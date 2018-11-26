@@ -1,0 +1,7 @@
+liming	127	228
+zhangwei	18	41.5
+wangdan	100	400
+lizi	100	400
+kongming	100	400
+lijian	48.5	155
+zhanjian	37	125.33

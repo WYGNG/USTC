@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="es.source.code.activity.FoodView">
+    <item
+        android:id="@+id/orderedfood"
+        android:orderInCategory="100"
+        android:title="@string/orderedfood"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/listmenu"
+        android:orderInCategory="101"
+        android:title="@string/listmenu"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/service"
+        android:orderInCategory="102"
+        android:title="@string/service"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/update"
+        android:orderInCategory="102"
+        android:title="启动实时更新"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,101 @@
+//
+//  main.cpp
+//  searchWord
+//
+//  Created by XQ on 2018/10/31.
+//  Copyright © 2018年 XQ. All rights reserved.
+//
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+
+bool dfs(vector<vector<char> > in, string word, int i, int j, int k){
+    size_t m = in.size();
+    size_t n = in[0].size();
+    //触碰边界
+    if(i < 0 || j < 0 || i >= m || j >= n){
+        return false;
+    }
+    //相等则做处理
+    if(in[i][j] == word[k]){
+        //暂存此时相等的值，与最后一句匹配用
+        char temp = in[i][j];
+        in[i][j]='*';
+        
+        //word到头
+        if(k==word.size()-1){
+            return true;
+        }
+        //word没有到头则递归
+        else if(
+                dfs(in, word, i-1, j, k+1)
+                ||dfs(in, word, i+1, j, k+1)
+                ||dfs(in, word, i, j-1, k+1)
+                ||dfs(in, word, i, j+1, k+1)){
+            return true;
+        }
+        in[i][j]=temp;
+    }
+    return false;
+}
+bool exist(vector<vector<char> >in, string word) {
+    int m = in.size();
+    int n = in[0].size();
+    bool ret = false;
+    //迭代每一个作为起始位置组成word与word匹配
+    for(int i = 0; i < m; i++){
+        for(int j = 0; j < n; j++){
+            if(dfs(in,word,i,j,0)){
+                ret = true;
+            }
+        }
+    }
+    return ret;
+}
+int main(){
+    size_t m = 0;
+    size_t n = 0;
+    cout << "m n:";
+    while(cin >> m >> n){
+        cout << "matrix:"<< endl;
+        vector<vector<char> > res;
+        for(int i = 0; i < m; i++){
+            vector<char> temp;
+            for(int j = 0; j < n; j++){
+                char in;
+                cin >> in;
+                temp.push_back(in);
+            }
+            res.push_back(temp);
+        }
+        
+        cout << "matrix is:" << endl;
+        for(int i = 0; i < m; i++){
+            
+            for(int j = 0; j < n; j++){
+                cout << res[i][j] << ' ';
+            }
+            cout << endl;
+            
+        }
+        /*
+         A B C E
+         S F C S
+         A D E E
+         */
+        while(EOF){
+            cout << "word:" << endl;
+            string word;
+            cin >> word;
+            cout << "exist?";
+            if(exist(res,word)) cout << "True" << endl;
+            else cout << "False" << endl;
+        }
+        
+        
+        
+    }
+    return 0;
+}

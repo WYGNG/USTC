@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">冰水鉴心点餐</string>
+    <string name="todo">TODO</string>
+    <string name="logo">LOGO</string>
+    <string name="byAuthor">by冰水鉴心</string>
+    <string name="log">注册</string>
+    <string name="order">点餐</string>
+    <string name="menu">订单</string>
+    <string name="help">帮助</string>
+    <string name="MainScreen">主页</string>
+    <string name="welcom">欢迎使用</string>
+    <string name="userName">用户名</string>
+    <string name="passWord">密码</string>
+    <string name="yes">确定</string>
+    <string name="no">取消</string>
+    <string name="backround">背景</string>
+    <string name="helptext"></string>
+    <string name="welcome">欢迎</string>
+    <string name="enter">登录</string>
+    <string name="returnto">返回</string>
+    <string name="logining">登录中...</string>
+    <string name="title_food_view">食物</string>
+    <string name="title_food_order_view">订单</string>
+    <string name="title_activity_food_detial_view">详细介绍</string>
+    <string name="registering">注册中...</string>
+    <string name="orderedfood">已点菜品</string>
+    <string name="listmenu">查看订单</string>
+    <string name="service">呼叫服务</string>
+
+
+</resources>
