@@ -1,37 +1,27 @@
-## Welcome to GitHub Pages
+#### 读研的课程仓库
 
-You can use the [editor on GitHub](https://github.com/xq773939719/USTC/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+##### 1.算法
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+多为LeetCode程序，难度Easy。
 
-```markdown
-Syntax highlighted code block
+##### 2.安卓
 
-# Header 1
-## Header 2
-### Header 3
+代码与文档。
 
-- Bulleted
-- List
+##### 3.数据结构
 
-1. Numbered
-2. List
+以前练习过，很简单。
 
-**Bold** and _Italic_ and `Code` text
+##### 4.Python
 
-[Link](url) and ![Image](src)
-```
+课程作业与文档。
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+##### 5.Linux
 
-### Jekyll Themes
+编写Shell，编译内核，编写Makefile。
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/xq773939719/USTC/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+##### 6.iOS
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+iOS课程代码与文档
