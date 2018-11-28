@@ -9,7 +9,7 @@
 
 #import "Stack.h"
 
-@implementation StackNode : NSObject
+@implementation StackNode
 - (instancetype)init
 {
     self = [super init];
@@ -48,7 +48,7 @@
 @end
 
 
-@implementation Stack : NSObject
+@implementation Stack
 - (instancetype)init
 {
     self = [super init];
