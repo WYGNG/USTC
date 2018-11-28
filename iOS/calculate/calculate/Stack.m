@@ -10,6 +10,7 @@
 #import "Stack.h"
 
 @implementation StackNode
+
 - (instancetype)init
 {
     self = [super init];
@@ -45,10 +46,15 @@
 -(StackNode *)getNext{
     return next;
 }
+
 @end
 
 
+
+
 @implementation Stack
+
+
 - (instancetype)init
 {
     self = [super init];
