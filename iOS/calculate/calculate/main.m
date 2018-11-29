@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Stack.h"
+#import "FormulaStringCalcUtility.h"
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
@@ -43,6 +44,20 @@ int main(int argc, const char * argv[]) {
         */
         //栈初始化完成
         //等待输入数据
+        
+        
+       
+        while(EOF){
+            NSLog(@"等待输入···");
+            char str[100] = {0};
+            scanf("%s",str);
+            NSString * in = [NSString stringWithUTF8String:str];
+            
+            
+            NSString *result = [FormulaStringCalcUtility calcComplexFormulaString:in];
+             NSLog(@"结果为%@",result);
+        }
+        
         
         
         //处理数据

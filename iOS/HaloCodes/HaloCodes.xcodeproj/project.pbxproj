@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1519A4BA21B0213A00F9C98E /* FormulaStringCalcUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 1519A4B921B0213A00F9C98E /* FormulaStringCalcUtility.m */; };
-		154183E221AE339300F86B91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 154183E121AE339300F86B91 /* main.m */; };
-		154183EB21AE33FF00F86B91 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 154183EA21AE33FF00F86B91 /* Stack.m */; };
+		1519A4B021B0138A00F9C98E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1519A4AF21B0138A00F9C98E /* main.m */; };
+		1519A4B821B0143400F9C98E /* HaloCodes.m in Sources */ = {isa = PBXBuildFile; fileRef = 1519A4B721B0143400F9C98E /* HaloCodes.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		154183DC21AE339300F86B91 /* CopyFiles */ = {
+		1519A4AA21B0138A00F9C98E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,16 +24,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1519A4B921B0213A00F9C98E /* FormulaStringCalcUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormulaStringCalcUtility.m; sourceTree = "<group>"; };
-		1519A4BB21B0216000F9C98E /* FormulaStringCalcUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormulaStringCalcUtility.h; sourceTree = "<group>"; };
-		154183DE21AE339300F86B91 /* calculate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = calculate; sourceTree = BUILT_PRODUCTS_DIR; };
-		154183E121AE339300F86B91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		154183EA21AE33FF00F86B91 /* Stack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
-		154183EC21AE341700F86B91 /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		1519A4AC21B0138A00F9C98E /* HaloCodes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HaloCodes; sourceTree = BUILT_PRODUCTS_DIR; };
+		1519A4AF21B0138A00F9C98E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1519A4B621B0142400F9C98E /* HaloCodes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HaloCodes.h; sourceTree = "<group>"; };
+		1519A4B721B0143400F9C98E /* HaloCodes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HaloCodes.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		154183DB21AE339300F86B91 /* Frameworks */ = {
+		1519A4A921B0138A00F9C98E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,100 +41,97 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		154183D521AE339300F86B91 = {
+		1519A4A321B0138A00F9C98E = {
 			isa = PBXGroup;
 			children = (
-				154183E021AE339300F86B91 /* calculate */,
-				154183DF21AE339300F86B91 /* Products */,
+				1519A4AE21B0138A00F9C98E /* HaloCodes */,
+				1519A4AD21B0138A00F9C98E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		154183DF21AE339300F86B91 /* Products */ = {
+		1519A4AD21B0138A00F9C98E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				154183DE21AE339300F86B91 /* calculate */,
+				1519A4AC21B0138A00F9C98E /* HaloCodes */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		154183E021AE339300F86B91 /* calculate */ = {
+		1519A4AE21B0138A00F9C98E /* HaloCodes */ = {
 			isa = PBXGroup;
 			children = (
-				154183E121AE339300F86B91 /* main.m */,
-				154183EA21AE33FF00F86B91 /* Stack.m */,
-				154183EC21AE341700F86B91 /* Stack.h */,
-				1519A4B921B0213A00F9C98E /* FormulaStringCalcUtility.m */,
-				1519A4BB21B0216000F9C98E /* FormulaStringCalcUtility.h */,
+				1519A4AF21B0138A00F9C98E /* main.m */,
+				1519A4B621B0142400F9C98E /* HaloCodes.h */,
+				1519A4B721B0143400F9C98E /* HaloCodes.m */,
 			);
-			path = calculate;
+			path = HaloCodes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		154183DD21AE339300F86B91 /* calculate */ = {
+		1519A4AB21B0138A00F9C98E /* HaloCodes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 154183E521AE339300F86B91 /* Build configuration list for PBXNativeTarget "calculate" */;
+			buildConfigurationList = 1519A4B321B0138A00F9C98E /* Build configuration list for PBXNativeTarget "HaloCodes" */;
 			buildPhases = (
-				154183DA21AE339300F86B91 /* Sources */,
-				154183DB21AE339300F86B91 /* Frameworks */,
-				154183DC21AE339300F86B91 /* CopyFiles */,
+				1519A4A821B0138A00F9C98E /* Sources */,
+				1519A4A921B0138A00F9C98E /* Frameworks */,
+				1519A4AA21B0138A00F9C98E /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = calculate;
-			productName = calculate;
-			productReference = 154183DE21AE339300F86B91 /* calculate */;
+			name = HaloCodes;
+			productName = HaloCodes;
+			productReference = 1519A4AC21B0138A00F9C98E /* HaloCodes */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		154183D621AE339300F86B91 /* Project object */ = {
+		1519A4A421B0138A00F9C98E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = XQ;
 				TargetAttributes = {
-					154183DD21AE339300F86B91 = {
+					1519A4AB21B0138A00F9C98E = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = 154183D921AE339300F86B91 /* Build configuration list for PBXProject "calculate" */;
+			buildConfigurationList = 1519A4A721B0138A00F9C98E /* Build configuration list for PBXProject "HaloCodes" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 154183D521AE339300F86B91;
-			productRefGroup = 154183DF21AE339300F86B91 /* Products */;
+			mainGroup = 1519A4A321B0138A00F9C98E;
+			productRefGroup = 1519A4AD21B0138A00F9C98E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				154183DD21AE339300F86B91 /* calculate */,
+				1519A4AB21B0138A00F9C98E /* HaloCodes */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		154183DA21AE339300F86B91 /* Sources */ = {
+		1519A4A821B0138A00F9C98E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				154183EB21AE33FF00F86B91 /* Stack.m in Sources */,
-				154183E221AE339300F86B91 /* main.m in Sources */,
-				1519A4BA21B0213A00F9C98E /* FormulaStringCalcUtility.m in Sources */,
+				1519A4B821B0143400F9C98E /* HaloCodes.m in Sources */,
+				1519A4B021B0138A00F9C98E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		154183E321AE339300F86B91 /* Debug */ = {
+		1519A4B121B0138A00F9C98E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -196,7 +190,7 @@
 			};
 			name = Debug;
 		};
-		154183E421AE339300F86B91 /* Release */ = {
+		1519A4B221B0138A00F9C98E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -248,7 +242,7 @@
 			};
 			name = Release;
 		};
-		154183E621AE339300F86B91 /* Debug */ = {
+		1519A4B421B0138A00F9C98E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -257,7 +251,7 @@
 			};
 			name = Debug;
 		};
-		154183E721AE339300F86B91 /* Release */ = {
+		1519A4B521B0138A00F9C98E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -269,25 +263,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		154183D921AE339300F86B91 /* Build configuration list for PBXProject "calculate" */ = {
+		1519A4A721B0138A00F9C98E /* Build configuration list for PBXProject "HaloCodes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				154183E321AE339300F86B91 /* Debug */,
-				154183E421AE339300F86B91 /* Release */,
+				1519A4B121B0138A00F9C98E /* Debug */,
+				1519A4B221B0138A00F9C98E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		154183E521AE339300F86B91 /* Build configuration list for PBXNativeTarget "calculate" */ = {
+		1519A4B321B0138A00F9C98E /* Build configuration list for PBXNativeTarget "HaloCodes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				154183E621AE339300F86B91 /* Debug */,
-				154183E721AE339300F86B91 /* Release */,
+				1519A4B421B0138A00F9C98E /* Debug */,
+				1519A4B521B0138A00F9C98E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 154183D621AE339300F86B91 /* Project object */;
+	rootObject = 1519A4A421B0138A00F9C98E /* Project object */;
 }

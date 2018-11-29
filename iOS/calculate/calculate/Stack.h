@@ -26,11 +26,8 @@
 - (NSInteger)getValue;
 
 - (void)setPre:(StackNode*)_pre;
-
 - (void)setNext:(StackNode*)_next;
-
-- (void)setPre:(StackNode*)_pre setNext:(StackNode *)_next;
-
+- (void)set:(StackNode*)_pre withNext:(StackNode *)_next;
 
 - (StackNode *)getPre;
 - (StackNode *)getNext;

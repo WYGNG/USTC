@@ -35,7 +35,7 @@
     next = _next;
 }
 
-- (void)setPre:(StackNode *)_pre setNext:(StackNode *)_next{
+- (void)set:(StackNode *)_pre withNext:(StackNode *)_next{
     pre = _pre;
     next = _next;
 }
@@ -62,7 +62,7 @@
         sum = 0;
         top = [[StackNode alloc] init];
         [top setValue:sum];
-        [top setPre:NULL setNext:NULL];
+        [top set:NULL withNext:NULL];
     }
     return self;
 }
@@ -77,7 +77,7 @@
 - (void)push:(NSInteger)value{
     StackNode * p = [StackNode new];
     [p setValue:value];
-    [p setPre:top setNext:NULL];
+    [p set:top withNext:NULL];
     [top setNext:p];
     top = p;
     ++sum;
