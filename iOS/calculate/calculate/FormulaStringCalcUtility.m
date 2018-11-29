@@ -5,6 +5,7 @@
 //  Created by XQ on 2018/11/29.
 //  Copyright © 2018年 XQ. All rights reserved.
 //  https://www.cnblogs.com/Kurodo/p/3456642.html
+//  https://blog.csdn.net/MAZHEN1986/article/details/7664237
 
 #import "FormulaStringCalcUtility.h"
 
