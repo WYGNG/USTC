@@ -4,7 +4,9 @@
 
 ##### 1.算法
 
-多为LeetCode程序，难度Easy。
+多为LeetCode程序，难度Easy。代码已转移到LeetCode中。
+
+![](https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/blog_images/readme/1.png)
 
 ##### 2.安卓
 
