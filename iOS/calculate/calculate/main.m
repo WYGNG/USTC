@@ -11,11 +11,10 @@
 //#import "FormulaStringCalcUtility.h"
 #import "calculate.h"
 int main(int argc, const char * argv[]) {
+    
     @autoreleasepool {
         // insert code here...
-        NSLog(@"简单计算");
-        
-        
+
         /*
         [stack push:1];
         NSLog(@"%ld",[[stack getTop]getValue]);
@@ -67,8 +66,9 @@ int main(int argc, const char * argv[]) {
             //scanf("%s",str);
             //NSString * in = [NSString stringWithUTF8String:str];
             evaluateExpression();
-            
         }
+        
+        
         
         
         

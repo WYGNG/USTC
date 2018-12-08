@@ -108,13 +108,17 @@ void evaluateExpression()   //计算
 			}
 		}
 	}
+	getchar();
 	cout << "= " << opan.top() << endl;
 }
 int main()
 {
-	cout << "使用栈结构解析计算表达式"<<endl;
-	evaluateExpression();
-	system("pause");
+	while(EOF){
+		cout << "使用栈结构解析计算表达式"<<endl;
+			evaluateExpression();
+
+	}
+	
 	return 0;
 }
 

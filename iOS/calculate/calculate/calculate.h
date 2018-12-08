@@ -60,14 +60,19 @@ int compute(char _a, char op, char _b)
         case '*':
             return a*b;
         case '/':
-        case '%':
+            
             if (b == 0)
             {
                 NSLog(@"error");
                 exit(0);
             }
-            if (op == '/')
-                return a / b;
+            return a / b;
+        case '%':
+            if (b == 0)
+            {
+                return a;
+            }
+            
             else
                 return a%b;
             
@@ -125,7 +130,9 @@ void evaluateExpression()   //计算
             }
         }
     }
+    getchar();
     NSLog(@"%d", [[opan getTop] getValue]-'0');
+    [opan pop];
 }
 
 
