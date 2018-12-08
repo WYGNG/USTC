@@ -21,10 +21,10 @@
     }
     return self;
 }
-- (void)setValue:(NSInteger)_value{
+- (void)setValue:(char)_value{
     value = _value;
 }
-- (NSInteger)getValue{
+- (char)getValue{
     return value;
 }
 
@@ -74,7 +74,7 @@
         return false;
     }
 }
-- (void)push:(NSInteger)value{
+- (void)push:(char)value{
     StackNode * p = [StackNode new];
     [p setValue:value];
     [p set:top withNext:NULL];

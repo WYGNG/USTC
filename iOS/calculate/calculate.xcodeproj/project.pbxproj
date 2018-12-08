@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1519A4BA21B0213A00F9C98E /* FormulaStringCalcUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 1519A4B921B0213A00F9C98E /* FormulaStringCalcUtility.m */; };
 		154183E221AE339300F86B91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 154183E121AE339300F86B91 /* main.m */; };
 		154183EB21AE33FF00F86B91 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 154183EA21AE33FF00F86B91 /* Stack.m */; };
 /* End PBXBuildFile section */
@@ -25,12 +24,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1519A4B921B0213A00F9C98E /* FormulaStringCalcUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormulaStringCalcUtility.m; sourceTree = "<group>"; };
-		1519A4BB21B0216000F9C98E /* FormulaStringCalcUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormulaStringCalcUtility.h; sourceTree = "<group>"; };
 		154183DE21AE339300F86B91 /* calculate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = calculate; sourceTree = BUILT_PRODUCTS_DIR; };
 		154183E121AE339300F86B91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		154183EA21AE33FF00F86B91 /* Stack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
 		154183EC21AE341700F86B91 /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		1549348021BBACA200537310 /* calculate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = calculate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +64,7 @@
 				154183E121AE339300F86B91 /* main.m */,
 				154183EA21AE33FF00F86B91 /* Stack.m */,
 				154183EC21AE341700F86B91 /* Stack.h */,
-				1519A4B921B0213A00F9C98E /* FormulaStringCalcUtility.m */,
-				1519A4BB21B0216000F9C98E /* FormulaStringCalcUtility.h */,
+				1549348021BBACA200537310 /* calculate.h */,
 			);
 			path = calculate;
 			sourceTree = "<group>";
@@ -130,7 +127,6 @@
 			files = (
 				154183EB21AE33FF00F86B91 /* Stack.m in Sources */,
 				154183E221AE339300F86B91 /* main.m in Sources */,
-				1519A4BA21B0213A00F9C98E /* FormulaStringCalcUtility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

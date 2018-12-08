@@ -16,14 +16,14 @@
 //属性
 {
     @public
-    NSInteger value;
+    char value;
     StackNode* pre;
     StackNode* next;
 }
 //实例方法
 
-- (void)setValue:(NSInteger)_value;
-- (NSInteger)getValue;
+- (void)setValue:(char)_value;
+- (char)getValue;
 
 - (void)setPre:(StackNode*)_pre;
 - (void)setNext:(StackNode*)_next;
@@ -47,7 +47,7 @@
 
 //实例方法
 - (Boolean) isEmpty;
-- (void)push:(NSInteger)value;
+- (void)push:(char)value;
 - (StackNode *)pop;
 - (StackNode *)getTop;
 

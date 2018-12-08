@@ -8,13 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "Stack.h"
-#import "FormulaStringCalcUtility.h"
+//#import "FormulaStringCalcUtility.h"
+#import "calculate.h"
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+        NSLog(@"简单计算");
         
-        Stack * stack = [[Stack alloc] init];
+        
         /*
         [stack push:1];
         NSLog(@"%ld",[[stack getTop]getValue]);
@@ -44,9 +45,11 @@ int main(int argc, const char * argv[]) {
         */
         //栈初始化完成
         //等待输入数据
-        
+        //处理数据
+        //得出结果
         
        
+        /*
         while(EOF){
             NSLog(@"等待输入···");
             char str[100] = {0};
@@ -57,13 +60,18 @@ int main(int argc, const char * argv[]) {
             NSString *result = [FormulaStringCalcUtility calcComplexFormulaString:in];
              NSLog(@"结果为%@",result);
         }
+        */
+        while(EOF){
+            NSLog(@"等待输入···");
+            //1+2char str[100] = {0};
+            //scanf("%s",str);
+            //NSString * in = [NSString stringWithUTF8String:str];
+            evaluateExpression();
+            
+        }
         
         
         
-        //处理数据
-        
-        
-        //得出结果
         
         
         
