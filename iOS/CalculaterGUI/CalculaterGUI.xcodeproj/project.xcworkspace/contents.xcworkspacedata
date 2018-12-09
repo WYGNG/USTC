@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:CalculaterGUI.xcodeproj">
+      location = "self:/Users/xq/#Repo/USTC/iOS/CalculaterGUI/CalculaterGUI.xcodeproj">
    </FileRef>
 </Workspace>

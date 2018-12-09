@@ -16,6 +16,7 @@
 		152B240321BD2A8500C54F97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 152B240221BD2A8500C54F97 /* main.m */; };
 		152B240D21BD2A8500C54F97 /* CalculaterGUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 152B240C21BD2A8500C54F97 /* CalculaterGUITests.m */; };
 		152B241821BD2A8500C54F97 /* CalculaterGUIUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 152B241721BD2A8500C54F97 /* CalculaterGUIUITests.m */; };
+		157391F921BD744300A425B4 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 157391F821BD744300A425B4 /* Calculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		152B241321BD2A8500C54F97 /* CalculaterGUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculaterGUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		152B241721BD2A8500C54F97 /* CalculaterGUIUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculaterGUIUITests.m; sourceTree = "<group>"; };
 		152B241921BD2A8500C54F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		157391F721BD744300A425B4 /* Calculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		157391F821BD744300A425B4 /* Calculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,7 @@
 		152B23EF21BD2A8300C54F97 /* CalculaterGUI */ = {
 			isa = PBXGroup;
 			children = (
+				157391EF21BD72CC00A425B4 /* Model */,
 				152B23F021BD2A8300C54F97 /* AppDelegate.h */,
 				152B23F121BD2A8300C54F97 /* AppDelegate.m */,
 				152B23F321BD2A8300C54F97 /* ViewController.h */,
@@ -133,6 +137,15 @@
 				152B241921BD2A8500C54F97 /* Info.plist */,
 			);
 			path = CalculaterGUIUITests;
+			sourceTree = "<group>";
+		};
+		157391EF21BD72CC00A425B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				157391F721BD744300A425B4 /* Calculator.h */,
+				157391F821BD744300A425B4 /* Calculator.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +280,7 @@
 			files = (
 				152B23F521BD2A8300C54F97 /* ViewController.m in Sources */,
 				152B23FB21BD2A8300C54F97 /* CalculaterGUI.xcdatamodeld in Sources */,
+				157391F921BD744300A425B4 /* Calculator.m in Sources */,
 				152B240321BD2A8500C54F97 /* main.m in Sources */,
 				152B23F221BD2A8300C54F97 /* AppDelegate.m in Sources */,
 			);
