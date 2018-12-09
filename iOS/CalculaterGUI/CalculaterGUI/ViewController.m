@@ -53,9 +53,17 @@
 }
 /*结果*/
 - (IBAction)result:(UIButton *)sender {
+    
+    
     self.lastText.text = nil;
     self.lastText.text = self .calculator.returnResult;
     self.TextField.text = nil;
+    
+    
+    
+    
+    
+    
 
 }
 
