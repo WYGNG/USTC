@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		152B23F221BD2A8300C54F97 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 152B23F121BD2A8300C54F97 /* AppDelegate.m */; };
+		152B23F521BD2A8300C54F97 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 152B23F421BD2A8300C54F97 /* ViewController.m */; };
+		152B23F821BD2A8300C54F97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152B23F621BD2A8300C54F97 /* Main.storyboard */; };
+		152B23FB21BD2A8300C54F97 /* CalculaterGUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 152B23F921BD2A8300C54F97 /* CalculaterGUI.xcdatamodeld */; };
+		152B23FD21BD2A8500C54F97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 152B23FC21BD2A8500C54F97 /* Assets.xcassets */; };
+		152B240021BD2A8500C54F97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152B23FE21BD2A8500C54F97 /* LaunchScreen.storyboard */; };
+		152B240321BD2A8500C54F97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 152B240221BD2A8500C54F97 /* main.m */; };
+		152B240D21BD2A8500C54F97 /* CalculaterGUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 152B240C21BD2A8500C54F97 /* CalculaterGUITests.m */; };
+		152B241821BD2A8500C54F97 /* CalculaterGUIUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 152B241721BD2A8500C54F97 /* CalculaterGUIUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		152B240921BD2A8500C54F97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 152B23E521BD2A8300C54F97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 152B23EC21BD2A8300C54F97;
+			remoteInfo = CalculaterGUI;
+		};
+		152B241421BD2A8500C54F97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 152B23E521BD2A8300C54F97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 152B23EC21BD2A8300C54F97;
+			remoteInfo = CalculaterGUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		152B23ED21BD2A8300C54F97 /* CalculaterGUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculaterGUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		152B23F021BD2A8300C54F97 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		152B23F121BD2A8300C54F97 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		152B23F321BD2A8300C54F97 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		152B23F421BD2A8300C54F97 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		152B23F721BD2A8300C54F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		152B23FA21BD2A8300C54F97 /* CalculaterGUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CalculaterGUI.xcdatamodel; sourceTree = "<group>"; };
+		152B23FC21BD2A8500C54F97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		152B23FF21BD2A8500C54F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		152B240121BD2A8500C54F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		152B240221BD2A8500C54F97 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		152B240821BD2A8500C54F97 /* CalculaterGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculaterGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		152B240C21BD2A8500C54F97 /* CalculaterGUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculaterGUITests.m; sourceTree = "<group>"; };
+		152B240E21BD2A8500C54F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		152B241321BD2A8500C54F97 /* CalculaterGUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculaterGUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		152B241721BD2A8500C54F97 /* CalculaterGUIUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculaterGUIUITests.m; sourceTree = "<group>"; };
+		152B241921BD2A8500C54F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		152B23EA21BD2A8300C54F97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		152B240521BD2A8500C54F97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		152B241021BD2A8500C54F97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		152B23E421BD2A8300C54F97 = {
+			isa = PBXGroup;
+			children = (
+				152B23EF21BD2A8300C54F97 /* CalculaterGUI */,
+				152B240B21BD2A8500C54F97 /* CalculaterGUITests */,
+				152B241621BD2A8500C54F97 /* CalculaterGUIUITests */,
+				152B23EE21BD2A8300C54F97 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		152B23EE21BD2A8300C54F97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				152B23ED21BD2A8300C54F97 /* CalculaterGUI.app */,
+				152B240821BD2A8500C54F97 /* CalculaterGUITests.xctest */,
+				152B241321BD2A8500C54F97 /* CalculaterGUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		152B23EF21BD2A8300C54F97 /* CalculaterGUI */ = {
+			isa = PBXGroup;
+			children = (
+				152B23F021BD2A8300C54F97 /* AppDelegate.h */,
+				152B23F121BD2A8300C54F97 /* AppDelegate.m */,
+				152B23F321BD2A8300C54F97 /* ViewController.h */,
+				152B23F421BD2A8300C54F97 /* ViewController.m */,
+				152B23F621BD2A8300C54F97 /* Main.storyboard */,
+				152B23FC21BD2A8500C54F97 /* Assets.xcassets */,
+				152B23FE21BD2A8500C54F97 /* LaunchScreen.storyboard */,
+				152B240121BD2A8500C54F97 /* Info.plist */,
+				152B240221BD2A8500C54F97 /* main.m */,
+				152B23F921BD2A8300C54F97 /* CalculaterGUI.xcdatamodeld */,
+			);
+			path = CalculaterGUI;
+			sourceTree = "<group>";
+		};
+		152B240B21BD2A8500C54F97 /* CalculaterGUITests */ = {
+			isa = PBXGroup;
+			children = (
+				152B240C21BD2A8500C54F97 /* CalculaterGUITests.m */,
+				152B240E21BD2A8500C54F97 /* Info.plist */,
+			);
+			path = CalculaterGUITests;
+			sourceTree = "<group>";
+		};
+		152B241621BD2A8500C54F97 /* CalculaterGUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				152B241721BD2A8500C54F97 /* CalculaterGUIUITests.m */,
+				152B241921BD2A8500C54F97 /* Info.plist */,
+			);
+			path = CalculaterGUIUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		152B23EC21BD2A8300C54F97 /* CalculaterGUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 152B241C21BD2A8500C54F97 /* Build configuration list for PBXNativeTarget "CalculaterGUI" */;
+			buildPhases = (
+				152B23E921BD2A8300C54F97 /* Sources */,
+				152B23EA21BD2A8300C54F97 /* Frameworks */,
+				152B23EB21BD2A8300C54F97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalculaterGUI;
+			productName = CalculaterGUI;
+			productReference = 152B23ED21BD2A8300C54F97 /* CalculaterGUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		152B240721BD2A8500C54F97 /* CalculaterGUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 152B241F21BD2A8500C54F97 /* Build configuration list for PBXNativeTarget "CalculaterGUITests" */;
+			buildPhases = (
+				152B240421BD2A8500C54F97 /* Sources */,
+				152B240521BD2A8500C54F97 /* Frameworks */,
+				152B240621BD2A8500C54F97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				152B240A21BD2A8500C54F97 /* PBXTargetDependency */,
+			);
+			name = CalculaterGUITests;
+			productName = CalculaterGUITests;
+			productReference = 152B240821BD2A8500C54F97 /* CalculaterGUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		152B241221BD2A8500C54F97 /* CalculaterGUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 152B242221BD2A8500C54F97 /* Build configuration list for PBXNativeTarget "CalculaterGUIUITests" */;
+			buildPhases = (
+				152B240F21BD2A8500C54F97 /* Sources */,
+				152B241021BD2A8500C54F97 /* Frameworks */,
+				152B241121BD2A8500C54F97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				152B241521BD2A8500C54F97 /* PBXTargetDependency */,
+			);
+			name = CalculaterGUIUITests;
+			productName = CalculaterGUIUITests;
+			productReference = 152B241321BD2A8500C54F97 /* CalculaterGUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		152B23E521BD2A8300C54F97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = XQ;
+				TargetAttributes = {
+					152B23EC21BD2A8300C54F97 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					152B240721BD2A8500C54F97 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 152B23EC21BD2A8300C54F97;
+					};
+					152B241221BD2A8500C54F97 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 152B23EC21BD2A8300C54F97;
+					};
+				};
+			};
+			buildConfigurationList = 152B23E821BD2A8300C54F97 /* Build configuration list for PBXProject "CalculaterGUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 152B23E421BD2A8300C54F97;
+			productRefGroup = 152B23EE21BD2A8300C54F97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				152B23EC21BD2A8300C54F97 /* CalculaterGUI */,
+				152B240721BD2A8500C54F97 /* CalculaterGUITests */,
+				152B241221BD2A8500C54F97 /* CalculaterGUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		152B23EB21BD2A8300C54F97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				152B240021BD2A8500C54F97 /* LaunchScreen.storyboard in Resources */,
+				152B23FD21BD2A8500C54F97 /* Assets.xcassets in Resources */,
+				152B23F821BD2A8300C54F97 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		152B240621BD2A8500C54F97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		152B241121BD2A8500C54F97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		152B23E921BD2A8300C54F97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				152B23F521BD2A8300C54F97 /* ViewController.m in Sources */,
+				152B23FB21BD2A8300C54F97 /* CalculaterGUI.xcdatamodeld in Sources */,
+				152B240321BD2A8500C54F97 /* main.m in Sources */,
+				152B23F221BD2A8300C54F97 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		152B240421BD2A8500C54F97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				152B240D21BD2A8500C54F97 /* CalculaterGUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		152B240F21BD2A8500C54F97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				152B241821BD2A8500C54F97 /* CalculaterGUIUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		152B240A21BD2A8500C54F97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 152B23EC21BD2A8300C54F97 /* CalculaterGUI */;
+			targetProxy = 152B240921BD2A8500C54F97 /* PBXContainerItemProxy */;
+		};
+		152B241521BD2A8500C54F97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 152B23EC21BD2A8300C54F97 /* CalculaterGUI */;
+			targetProxy = 152B241421BD2A8500C54F97 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		152B23F621BD2A8300C54F97 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				152B23F721BD2A8300C54F97 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		152B23FE21BD2A8500C54F97 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				152B23FF21BD2A8500C54F97 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		152B241A21BD2A8500C54F97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		152B241B21BD2A8500C54F97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		152B241D21BD2A8500C54F97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DXFP8TLN85;
+				INFOPLIST_FILE = CalculaterGUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = XQ.CalculaterGUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		152B241E21BD2A8500C54F97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DXFP8TLN85;
+				INFOPLIST_FILE = CalculaterGUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = XQ.CalculaterGUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		152B242021BD2A8500C54F97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DXFP8TLN85;
+				INFOPLIST_FILE = CalculaterGUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = XQ.CalculaterGUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CalculaterGUI.app/CalculaterGUI";
+			};
+			name = Debug;
+		};
+		152B242121BD2A8500C54F97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DXFP8TLN85;
+				INFOPLIST_FILE = CalculaterGUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = XQ.CalculaterGUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CalculaterGUI.app/CalculaterGUI";
+			};
+			name = Release;
+		};
+		152B242321BD2A8500C54F97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DXFP8TLN85;
+				INFOPLIST_FILE = CalculaterGUIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = XQ.CalculaterGUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CalculaterGUI;
+			};
+			name = Debug;
+		};
+		152B242421BD2A8500C54F97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DXFP8TLN85;
+				INFOPLIST_FILE = CalculaterGUIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = XQ.CalculaterGUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CalculaterGUI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		152B23E821BD2A8300C54F97 /* Build configuration list for PBXProject "CalculaterGUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				152B241A21BD2A8500C54F97 /* Debug */,
+				152B241B21BD2A8500C54F97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		152B241C21BD2A8500C54F97 /* Build configuration list for PBXNativeTarget "CalculaterGUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				152B241D21BD2A8500C54F97 /* Debug */,
+				152B241E21BD2A8500C54F97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		152B241F21BD2A8500C54F97 /* Build configuration list for PBXNativeTarget "CalculaterGUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				152B242021BD2A8500C54F97 /* Debug */,
+				152B242121BD2A8500C54F97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		152B242221BD2A8500C54F97 /* Build configuration list for PBXNativeTarget "CalculaterGUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				152B242321BD2A8500C54F97 /* Debug */,
+				152B242421BD2A8500C54F97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		152B23F921BD2A8300C54F97 /* CalculaterGUI.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				152B23FA21BD2A8300C54F97 /* CalculaterGUI.xcdatamodel */,
+			);
+			currentVersion = 152B23FA21BD2A8300C54F97 /* CalculaterGUI.xcdatamodel */;
+			path = CalculaterGUI.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 152B23E521BD2A8300C54F97 /* Project object */;
+}
