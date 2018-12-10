@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Model/Calculator.h"
 @interface ViewController ()
+{Boolean flag;}
 @property (weak, nonatomic) IBOutlet UITextField *TextField;
 @property (weak, nonatomic) IBOutlet UITextField *lastText;
 
@@ -35,36 +36,58 @@
 @property (weak, nonatomic) IBOutlet UIButton *Buttonreverse;
 
 @property (strong,nonatomic) Calculator * calculator;
+
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    flag = NO;
     // Do any additional setup after loading the view, typically from a nib.
 }
 /*输入*/
 - (IBAction)inputNumber:(UIButton *)sender {
     
     NSMutableString * string = [NSMutableString stringWithString:self.TextField.text];
-    [self.calculator.string appendString:[[sender titleLabel] text]];
-    [string appendString:[[sender titleLabel] text]];
-    self.TextField.text = string;
+    
+    //修复bug
+    if(flag == YES){
+        NSString * a = [[sender titleLabel] text];
+        if([a isEqual:@"+"] || [a isEqual:@"-"] || [a isEqual:@"*"] || [a isEqual:@"/"]){
+            [string appendString:[[sender titleLabel] text]];
+            [self.calculator.string appendString:[[sender titleLabel] text]];
+            self.TextField.text = string;
+        }
+       else{
+            self.calculator.string = nil;
+            [string appendString:[[sender titleLabel] text]];
+            [self.calculator.string appendString:[[sender titleLabel] text]];
+            self.TextField.text = string;
+            flag = NO;
+            
+        }
+    }
+    //
+    
+    else{
+        [string appendString:[[sender titleLabel] text]];
+        [self.calculator.string appendString:[[sender titleLabel] text]];
+        self.TextField.text = string;
+    }
+
 }
 /*结果*/
 - (IBAction)result:(UIButton *)sender {
     
-    
     self.lastText.text = nil;
     self.lastText.text = self .calculator.returnResult;
     self.TextField.text = nil;
+    flag = YES;
     
     
     
-    
-    
-    
-
 }
 
 /*删除*/
