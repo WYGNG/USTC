@@ -93,11 +93,14 @@
 
 /*删除*/
 - (IBAction)delete:(UIButton *)sender {
-    long length = self.calculator.string.length - 1;
-    if(length >= 0){
-        [self.calculator.string deleteCharactersInRange:NSMakeRange(length,1)];
-        self.TextField.text = self.calculator.string;
+    if(self.TextField.text != nil){
+        long length = self.calculator.string.length - 1;
+        if(length >= 0){
+            [self.calculator.string deleteCharactersInRange:NSMakeRange(length,1)];
+            self.TextField.text = self.calculator.string;
+        }
     }
+    
     //[self.calculator deleteNumber];
 }
 
