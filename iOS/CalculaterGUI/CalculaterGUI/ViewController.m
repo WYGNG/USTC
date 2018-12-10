@@ -59,6 +59,7 @@
             [string appendString:[[sender titleLabel] text]];
             [self.calculator.string appendString:[[sender titleLabel] text]];
             self.TextField.text = string;
+            flag = NO;
         }
        else{
             self.calculator.string = nil;
