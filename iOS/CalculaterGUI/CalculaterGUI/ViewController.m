@@ -85,7 +85,7 @@
     self.lastText.text = nil;
     self.lastText.text = self .calculator.returnResult;
     if([self.lastText.text  isEqual: @"Error"]){
-        UIAlertView * uialertview = [[UIAlertView alloc] initWithTitle:@"出现错误辣(>_<)" message:@"输入有误，请输入合法表达式" delegate:0 cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+        UIAlertView * uialertview = [[UIAlertView alloc] initWithTitle:@"出现错误辣(>_<)" message:@"输入有误，请输入合法表达式" delegate:0 cancelButtonTitle:@"好的😯" otherButtonTitles:nil, nil];
         [uialertview show];
         self.lastText.text = nil;
     }
