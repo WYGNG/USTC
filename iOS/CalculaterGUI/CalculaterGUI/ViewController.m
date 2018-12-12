@@ -46,10 +46,17 @@
     [super viewDidLoad];
     flag = NO;
     // Do any additional setup after loading the view, typically from a nib.
+   
+    /*
+     UIToolbar * uitoolbar = [[UIToolbar alloc] init];
+    uitoolbar.frame = self.view.bounds;
+    uitoolbar.barStyle = UIBarStyleBlack;
+    uitoolbar.alpha = 0.1;
+    [self.view addSubview:uitoolbar];
+                                                                                    */
 }
 /*输入*/
 - (IBAction)inputNumber:(UIButton *)sender {
-    
     NSMutableString * string = [NSMutableString stringWithString:self.TextField.text];
     
     //修复bug
@@ -85,8 +92,26 @@
     self.lastText.text = nil;
     self.lastText.text = self .calculator.returnResult;
     if([self.lastText.text  isEqual: @"Error"]){
-        UIAlertView * uialertview = [[UIAlertView alloc] initWithTitle:@"出现错误辣(>_<)" message:@"输入有误，请输入合法表达式" delegate:0 cancelButtonTitle:@"好的😯" otherButtonTitles:nil, nil];
-        [uialertview show];
+        //UIAlertView * uialertview = [[UIAlertView alloc] initWithTitle:@"出现错误辣(>_<)" message:@"输入有误，请输入合法表达式" delegate:0 cancelButtonTitle:@"好的😯" otherButtonTitles:nil, nil];
+        //[uialertview show];
+        UIAlertController * uiAlertController = [UIAlertController alertControllerWithTitle:@"出现错误辣(>_<)" message:@"输入有误，请输入合法表达式" preferredStyle:UIAlertControllerStyleAlert];
+        //
+        UIAlertAction * uiYesAction = [UIAlertAction actionWithTitle:@"好的👌" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            NSLog(@"好的👌");
+        }];
+        /*
+        UIAlertAction * uiNoAction = [UIAlertAction actionWithTitle:@"不行🚫" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            NSLog(@"不行🚫");
+  
+        }];
+         */
+        //
+        [uiAlertController addAction:uiYesAction];
+        //[uiAlertController addAction:uiNoAction];
+        //
+        [self presentViewController:uiAlertController animated:YES completion:nil];
+        
+        
         self.lastText.text = nil;
     }
     self.TextField.text = nil;
