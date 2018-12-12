@@ -10,6 +10,7 @@
 #import "Model/Calculator.h"
 @interface ViewController ()
 {Boolean flag;}
+@property (weak, nonatomic) IBOutlet UIImageView *backGround;
 @property (weak, nonatomic) IBOutlet UITextField *TextField;
 @property (weak, nonatomic) IBOutlet UITextField *lastText;
 
@@ -41,19 +42,29 @@
 @end
 
 @implementation ViewController
+//https://blog.csdn.net/u013775224/article/details/78642089
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.hidden = YES;
+    self.navigationController.navigationBar.barStyle = UIStatusBarStyleLightContent;
+    
+    UIToolbar * uitoolbar = [[UIToolbar alloc] init];
+    uitoolbar.frame = self.backGround.bounds;
+    uitoolbar.barStyle = UIBarStyleBlack;
+    uitoolbar.alpha = 0.99;
+    [self.backGround addSubview:uitoolbar];
+}
 
+//
 - (void)viewDidLoad {
     [super viewDidLoad];
     flag = NO;
     // Do any additional setup after loading the view, typically from a nib.
    
-    /*
-     UIToolbar * uitoolbar = [[UIToolbar alloc] init];
-    uitoolbar.frame = self.view.bounds;
-    uitoolbar.barStyle = UIBarStyleBlack;
-    uitoolbar.alpha = 0.1;
-    [self.view addSubview:uitoolbar];
-                                                                                    */
+    
 }
 /*输入*/
 - (IBAction)inputNumber:(UIButton *)sender {
