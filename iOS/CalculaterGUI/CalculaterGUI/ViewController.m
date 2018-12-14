@@ -61,6 +61,8 @@
 //
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _TextField.enabled = NO;
+    _lastText.enabled = NO;
     flag = NO;
     // Do any additional setup after loading the view, typically from a nib.
    
