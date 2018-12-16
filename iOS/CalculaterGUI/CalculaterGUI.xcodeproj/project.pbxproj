@@ -17,6 +17,8 @@
 		152B240D21BD2A8500C54F97 /* CalculaterGUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 152B240C21BD2A8500C54F97 /* CalculaterGUITests.m */; };
 		152B241821BD2A8500C54F97 /* CalculaterGUIUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 152B241721BD2A8500C54F97 /* CalculaterGUIUITests.m */; };
 		157391F921BD744300A425B4 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 157391F821BD744300A425B4 /* Calculator.m */; };
+		15C8788421C671110079289A /* advanceCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C8788321C671110079289A /* advanceCalculator.m */; };
+		15C8788721C67B800079289A /* advanceCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C8788621C67B800079289A /* advanceCalculatorViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,10 @@
 		152B241921BD2A8500C54F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		157391F721BD744300A425B4 /* Calculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
 		157391F821BD744300A425B4 /* Calculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
+		15C8788221C671110079289A /* advanceCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = advanceCalculator.h; sourceTree = "<group>"; };
+		15C8788321C671110079289A /* advanceCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = advanceCalculator.m; sourceTree = "<group>"; };
+		15C8788521C67B800079289A /* advanceCalculatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = advanceCalculatorViewController.h; sourceTree = "<group>"; };
+		15C8788621C67B800079289A /* advanceCalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = advanceCalculatorViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,8 @@
 				152B23F121BD2A8300C54F97 /* AppDelegate.m */,
 				152B23F321BD2A8300C54F97 /* ViewController.h */,
 				152B23F421BD2A8300C54F97 /* ViewController.m */,
+				15C8788521C67B800079289A /* advanceCalculatorViewController.h */,
+				15C8788621C67B800079289A /* advanceCalculatorViewController.m */,
 				152B23F621BD2A8300C54F97 /* Main.storyboard */,
 				152B23FC21BD2A8500C54F97 /* Assets.xcassets */,
 				152B23FE21BD2A8500C54F97 /* LaunchScreen.storyboard */,
@@ -144,6 +152,8 @@
 			children = (
 				157391F721BD744300A425B4 /* Calculator.h */,
 				157391F821BD744300A425B4 /* Calculator.m */,
+				15C8788221C671110079289A /* advanceCalculator.h */,
+				15C8788321C671110079289A /* advanceCalculator.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -278,10 +288,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15C8788721C67B800079289A /* advanceCalculatorViewController.m in Sources */,
 				152B23F521BD2A8300C54F97 /* ViewController.m in Sources */,
 				152B23FB21BD2A8300C54F97 /* CalculaterGUI.xcdatamodeld in Sources */,
 				157391F921BD744300A425B4 /* Calculator.m in Sources */,
 				152B240321BD2A8500C54F97 /* main.m in Sources */,
+				15C8788421C671110079289A /* advanceCalculator.m in Sources */,
 				152B23F221BD2A8300C54F97 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

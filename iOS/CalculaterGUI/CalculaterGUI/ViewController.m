@@ -48,8 +48,8 @@
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    self.navigationController.navigationBar.hidden = YES;
-    self.navigationController.navigationBar.barStyle = UIStatusBarStyleLightContent;
+    //self.navigationController.navigationBar.hidden = YES;
+    //self.navigationController.navigationBar.barStyle = UIStatusBarStyleLightContent;
     
     UIToolbar * uitoolbar = [[UIToolbar alloc] init];
     uitoolbar.frame = self.backGround.bounds;

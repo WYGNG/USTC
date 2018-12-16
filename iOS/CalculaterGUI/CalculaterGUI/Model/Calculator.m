@@ -1,5 +1,5 @@
 //
-//  NSObject+Calculator.m
+//  Calculator.m
 //  CalculaterGUI
 //
 //  Created by XQ on 2018/12/10.

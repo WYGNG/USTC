@@ -1,5 +1,5 @@
 //
-//  NSObject+Calculator.h
+//  Calculator.h
 //  CalculaterGUI
 //
 //  Created by XQ on 2018/12/10.
@@ -7,8 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-
-
 
 @interface Calculator : NSObject
 @property (strong ,nonatomic) NSMutableString * string;
