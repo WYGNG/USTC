@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Model/Calculator.h"
+#import "Model/advanceCalculator.h"
+#import "advanceCalculatorViewController.h"
 @interface ViewController : UIViewController
 
 

@@ -9,11 +9,50 @@
 #import "advanceCalculatorViewController.h"
 
 @interface advanceCalculatorViewController ()
+
+@property (weak, nonatomic) IBOutlet UITextField *lastText_428;
+@property (weak, nonatomic) IBOutlet UITextField *currentText_428;
 @property (weak, nonatomic) IBOutlet UIImageView *advancebg_428;
+@property (weak, nonatomic) IBOutlet UIButton *btn_left_428;
+@property (weak, nonatomic) IBOutlet UIButton *btn_right_428;
+@property (weak, nonatomic) IBOutlet UIButton *btn_e_428;
+@property (weak, nonatomic) IBOutlet UIButton *btn_pi_428;
 
 @end
 
 @implementation advanceCalculatorViewController
+
+
+- (IBAction)inputKey:(UIButton *)sender {
+    NSInteger a = sender.tag;
+    if(a == 1 || a== 2 || a == 3 || a == 4){
+        NSMutableString * str = [NSMutableString stringWithString:self.currentText_428.text];
+        if([[[sender titleLabel]text] isEqualToString:@"e"]){
+            [self.cal.string appendString:@"2.7182818"];
+        }
+        else if([[[sender titleLabel]text] isEqualToString:@"pi"]){
+            [self.cal.string appendString:@"3.1415926"];
+        }
+        else {
+            [self.cal.string appendString: [[sender titleLabel] text]];
+        }
+        [str appendString:[[sender titleLabel] text]];
+        self.currentText_428.text = str;
+        self.cal.screen = str;
+    }
+    NSString * title = sender.titleLabel.text;
+    if([title isEqualToString:@"sqrt"]){
+        self.cal.string = [NSMutableString stringWithString:[self.cal sqrt:[self.cal returnResult]]];
+        self.cal.screen = self.cal.string;
+        self.currentText_428.text = self.cal.screen;
+    }
+        
+    
+    
+}
+
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -41,6 +80,19 @@
     uitoolbar.barStyle = UIBarStyleBlack;
     uitoolbar.alpha = 0.99;
     [self.advancebg_428 addSubview:uitoolbar];
+    _lastText_428.enabled= NO;
+    _currentText_428.enabled = NO;
+    
+    self.currentText_428.text = self.cal.screen;
+    
 }
+
+
+
+
+
+
+
+
 
 @end

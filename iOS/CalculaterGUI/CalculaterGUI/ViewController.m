@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "Model/Calculator.h"
+
 @interface ViewController ()
 {Boolean flag;}
 @property (weak, nonatomic) IBOutlet UIImageView *backGround;
@@ -36,7 +36,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *Buttondelete;
 @property (weak, nonatomic) IBOutlet UIButton *Buttonreverse;
 
-@property (strong,nonatomic) Calculator * calculator;
+@property (strong,nonatomic) advanceCalculator * advanceCalculator;
 
 
 @end
@@ -56,6 +56,9 @@
     uitoolbar.barStyle = UIBarStyleBlack;
     uitoolbar.alpha = 0.99;
     [self.backGround addSubview:uitoolbar];
+    
+    self.TextField.text = self.advanceCalculator.screen;
+    
 }
 
 //
@@ -78,25 +81,25 @@
         if([a isEqual:@"+"] || [a isEqual:@"-"] || [a isEqual:@"*"] || [a isEqual:@"/"]){
             if([a isEqualToString:@"/"]){
                 BOOL flag = false;
-                for(int i = 0; i < self.calculator.string.length; i++){
-                    if([self.calculator.string characterAtIndex:i] == '.'){
+                for(int i = 0; i < self.advanceCalculator.string.length; i++){
+                    if([self.advanceCalculator.string characterAtIndex:i] == '.'){
                         flag = true;
                     }
                 }
                 if(flag == false){
-                    [self.calculator.string appendString:@".0"];
+                    [self.advanceCalculator.string appendString:@".0"];
                 }
             }
             [string appendString:[[sender titleLabel] text]];
        
-            [self.calculator.string appendString:[[sender titleLabel] text]];
+            [self.advanceCalculator.string appendString:[[sender titleLabel] text]];
             self.TextField.text = string;
             flag = NO;
         }
        else{
-            self.calculator.string = nil;
+            self.advanceCalculator.string = nil;
             [string appendString:[[sender titleLabel] text]];
-            [self.calculator.string appendString:[[sender titleLabel] text]];
+            [self.advanceCalculator.string appendString:[[sender titleLabel] text]];
             self.TextField.text = string;
             flag = NO;
             
@@ -108,26 +111,28 @@
         NSString * a = [[sender titleLabel] text];
         if([a isEqualToString:@"/"]){
             BOOL flag = false;
-            for(int i = 0; i < self.calculator.string.length; i++){
-                if([self.calculator.string characterAtIndex:i] == '.'){
+            for(int i = 0; i < self.advanceCalculator.string.length; i++){
+                if([self.advanceCalculator.string characterAtIndex:i] == '.'){
                     flag = true;
                 }
+                if(flag == false){
+                    [self.advanceCalculator.string appendString:@".0"];
+                }
             }
-            if(flag == false){
-                [self.calculator.string appendString:@".0"];
-            }
+            
         }
         [string appendString:[[sender titleLabel] text]];
-        [self.calculator.string appendString:[[sender titleLabel] text]];
+        [self.advanceCalculator.string appendString:[[sender titleLabel] text]];
         self.TextField.text = string;
     }
+    self.advanceCalculator.screen = string;
 
 }
 /*结果*/
 - (IBAction)result:(UIButton *)sender {
     
     self.lastText.text = nil;
-    self.lastText.text = self .calculator.returnResult;
+    self.lastText.text = self .advanceCalculator.returnResult;
     if([self.lastText.text  isEqual: @"Error"]){
         //UIAlertView * uialertview = [[UIAlertView alloc] initWithTitle:@"出现错误辣(>_<)" message:@"输入有误，请输入合法表达式" delegate:0 cancelButtonTitle:@"好的😯" otherButtonTitles:nil, nil];
         //[uialertview show];
@@ -147,8 +152,7 @@
         //[uiAlertController addAction:uiNoAction];
         //
         [self presentViewController:uiAlertController animated:YES completion:nil];
-        
-        
+
         self.lastText.text = nil;
     }
     self.TextField.text = nil;
@@ -160,15 +164,9 @@
 
 /*删除*/
 - (IBAction)delete:(UIButton *)sender {
-    if(self.TextField.text != nil){
-        long length = self.calculator.string.length - 1;
-        if(length >= 0){
-            [self.calculator.string deleteCharactersInRange:NSMakeRange(length,1)];
-            self.TextField.text = self.calculator.string;
-        }
-    }
-    
-    //[self.calculator deleteNumber];
+    [self.advanceCalculator deleteNumber];
+     self.TextField.text = self.advanceCalculator.string;
+    //[self.advanceCalculator deleteNumber];
 }
 
 
@@ -176,20 +174,28 @@
 - (IBAction)clear:(UIButton *)sender {
     self.TextField.text = nil;
     self.lastText.text = nil;
-    [self.calculator clearString];
+    [self.advanceCalculator clearString];
 }
-- (Calculator *)calculator{
-    if(!_calculator){
-        _calculator = [[Calculator alloc] init];
+- (advanceCalculator *)advanceCalculator{
+    if(!_advanceCalculator){
+        _advanceCalculator = [[advanceCalculator alloc] init];
        
     }
-     return _calculator;
+     return _advanceCalculator;
 }
 - (IBAction)reverse:(UIButton *)sender {
     NSMutableString * string = [NSMutableString stringWithString:self.TextField.text];
-    [self.calculator.string insertString:@"-" atIndex:0];
+    [self.advanceCalculator.string insertString:@"-" atIndex:0];
     [string insertString:@"-" atIndex:0];
     self.TextField.text = string;
+}
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqualToString:@"advanceScene"]){
+        if([segue.destinationViewController isKindOfClass:[advanceCalculatorViewController class] ]){
+            advanceCalculatorViewController * acv = (advanceCalculatorViewController *)segue.destinationViewController;
+            acv.cal = self.advanceCalculator;
+        }
+    }
 }
 
 @end
