@@ -30,7 +30,9 @@
 
 /*返回结果*/
 - (NSString *)returnResult{
+
     @try {
+        
         NSExpression * exp = [NSExpression expressionWithFormat:self.string];
         id value = [exp expressionValueWithObject:nil context:nil];
         NSLog(@"Result=%f",[value floatValue]);
@@ -43,6 +45,7 @@
     
     
 }
+
 
 
 @end

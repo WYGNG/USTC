@@ -11,7 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface advanceCalculator : Calculator
-
+@property (strong,nonatomic) NSMutableString * screen;
+-(NSString *)sqrt:(NSString *) content;
 @end
 
 NS_ASSUME_NONNULL_END

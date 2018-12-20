@@ -76,7 +76,19 @@
     if(flag == YES){
         NSString * a = [[sender titleLabel] text];
         if([a isEqual:@"+"] || [a isEqual:@"-"] || [a isEqual:@"*"] || [a isEqual:@"/"]){
+            if([a isEqualToString:@"/"]){
+                BOOL flag = false;
+                for(int i = 0; i < self.calculator.string.length; i++){
+                    if([self.calculator.string characterAtIndex:i] == '.'){
+                        flag = true;
+                    }
+                }
+                if(flag == false){
+                    [self.calculator.string appendString:@".0"];
+                }
+            }
             [string appendString:[[sender titleLabel] text]];
+       
             [self.calculator.string appendString:[[sender titleLabel] text]];
             self.TextField.text = string;
             flag = NO;
@@ -93,6 +105,18 @@
     //
     
     else{
+        NSString * a = [[sender titleLabel] text];
+        if([a isEqualToString:@"/"]){
+            BOOL flag = false;
+            for(int i = 0; i < self.calculator.string.length; i++){
+                if([self.calculator.string characterAtIndex:i] == '.'){
+                    flag = true;
+                }
+            }
+            if(flag == false){
+                [self.calculator.string appendString:@".0"];
+            }
+        }
         [string appendString:[[sender titleLabel] text]];
         [self.calculator.string appendString:[[sender titleLabel] text]];
         self.TextField.text = string;
