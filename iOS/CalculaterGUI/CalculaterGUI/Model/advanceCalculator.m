@@ -21,15 +21,19 @@
 
 - (void)deleteNumber{
  
-        long length = self.string.length - 1;
-        if(length >= 0){
-            [self.string deleteCharactersInRange:NSMakeRange(length,1)];
-            [self.screen deleteCharactersInRange:NSMakeRange(length, 1)];
-           
-        }
+    long length = self.string.length - 1;
+    if(length >= 0){
+        [self.string deleteCharactersInRange:NSMakeRange(length,1)];
+    }
+    if(self.screen.length-1>=0){
+        [self.screen deleteCharactersInRange:NSMakeRange(length, 1)];
+    }
     
 }
-
+- (void)clearString{
+    self.string = nil;
+    self.screen = [NSMutableString stringWithString:@""];
+}
 
 
 

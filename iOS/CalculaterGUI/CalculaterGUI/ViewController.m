@@ -99,6 +99,18 @@
         }
        else{
             self.advanceCalculator.string = nil;
+           NSString * a = [[sender titleLabel] text];
+           if([a isEqualToString:@"/"]){
+               BOOL flag = false;
+               for(int i = 0; i < self.advanceCalculator.string.length; i++){
+                   if([self.advanceCalculator.string characterAtIndex:i] == '.'){
+                       flag = true;
+                   }
+               }
+               if(flag == false){
+                   [self.advanceCalculator.string appendString:@".0"];
+               }
+           }
             [string appendString:[[sender titleLabel] text]];
             [self.advanceCalculator.string appendString:[[sender titleLabel] text]];
             self.TextField.text = string;
@@ -116,9 +128,10 @@
                 if([self.advanceCalculator.string characterAtIndex:i] == '.'){
                     flag = true;
                 }
-                if(flag == false){
-                    [self.advanceCalculator.string appendString:@".0"];
-                }
+               
+            }
+            if(flag == false){
+                [self.advanceCalculator.string appendString:@".0"];
             }
             
         }
