@@ -58,7 +58,8 @@
     uitoolbar.alpha = 0.99;
     [self.backGround addSubview:uitoolbar];
     
-   self.TextField.text = self.advanceCalculator.screen;
+    self.TextField.text = self.advanceCalculator.screen;
+    self.advanceCalculator.string = self.advanceCalculator.screen;
     
 }
 
@@ -181,7 +182,7 @@
 - (IBAction)delete:(UIButton *)sender {
     [self.advanceCalculator deleteNumber];
     
-     self.TextField.text = self.advanceCalculator.string;
+     self.TextField.text = self.advanceCalculator.screen;
     //[self.advanceCalculator deleteNumber];
 }
 

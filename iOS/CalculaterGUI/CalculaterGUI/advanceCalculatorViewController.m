@@ -46,8 +46,81 @@
         self.cal.screen = self.cal.string;
         self.currentText_428.text = self.cal.screen;
     }
-        
-    
+    if([title isEqualToString:@"abs"]){
+        self.cal.string = [NSMutableString stringWithString:[self.cal abs:[self.cal returnResult]]];
+        self.cal.screen = self.cal.string;
+        self.currentText_428.text = self.cal.screen;
+    }
+    if([title isEqualToString:@"x1"]){
+        self.cal.string = [NSMutableString stringWithString:[self.cal x1:[self.cal returnResult]]];
+        self.cal.screen = self.cal.string;
+        self.currentText_428.text = self.cal.screen;
+    }
+    if([title isEqualToString:@"x_2"]){
+        self.cal.string = [NSMutableString stringWithString:[self.cal x_2:[self.cal returnResult]]];
+        self.cal.screen = self.cal.string;
+        self.currentText_428.text = self.cal.screen;
+    }
+    if([title isEqualToString:@"x_3"]){
+        self.cal.string = [NSMutableString stringWithString:[self.cal x_3:[self.cal returnResult]]];
+        self.cal.screen = self.cal.string;
+        self.currentText_428.text = self.cal.screen;
+    }
+    if([title isEqualToString:@"ln"]){
+        self.cal.string = [NSMutableString stringWithString:[self.cal ln:[self.cal returnResult]]];
+        self.cal.screen = self.cal.string;
+        self.currentText_428.text = self.cal.screen;
+    }
+    if([title isEqualToString:@"log"]){
+        self.cal.string = [NSMutableString stringWithString:[self.cal log:[self.cal returnResult]]];
+        self.cal.screen = self.cal.string;
+        self.currentText_428.text = self.cal.screen;
+    }
+    if([title isEqualToString:@"sin"]){
+        self.cal.string = [NSMutableString stringWithString:[self.cal sin:[self.cal returnResult]]];
+        self.cal.screen = self.cal.string;
+        self.currentText_428.text = self.cal.screen;
+    }
+    if([title isEqualToString:@"cos"]){
+        self.cal.string = [NSMutableString stringWithString:[self.cal cos:[self.cal returnResult]]];
+        self.cal.screen = self.cal.string;
+        self.currentText_428.text = self.cal.screen;
+    }
+    if([title isEqualToString:@"tan"]){
+        self.cal.string = [NSMutableString stringWithString:[self.cal tan:[self.cal returnResult]]];
+        self.cal.screen = self.cal.string;
+        self.currentText_428.text = self.cal.screen;
+    }
+    if([title isEqualToString:@"asin"]){
+        self.cal.string = [NSMutableString stringWithString:[self.cal asin:[self.cal returnResult]]];
+        self.cal.screen = self.cal.string;
+        self.currentText_428.text = self.cal.screen;
+    }
+    if([title isEqualToString:@"acos"]){
+        self.cal.string = [NSMutableString stringWithString:[self.cal acos:[self.cal returnResult]]];
+        self.cal.screen = self.cal.string;
+        self.currentText_428.text = self.cal.screen;
+    }
+    if([title isEqualToString:@"atan"]){
+        self.cal.string = [NSMutableString stringWithString:[self.cal atan:[self.cal returnResult]]];
+        self.cal.screen = self.cal.string;
+        self.currentText_428.text = self.cal.screen;
+    }
+    if([title isEqualToString:@"sinh"]){
+        self.cal.string = [NSMutableString stringWithString:[self.cal sinh:[self.cal returnResult]]];
+        self.cal.screen = self.cal.string;
+        self.currentText_428.text = self.cal.screen;
+    }
+    if([title isEqualToString:@"cosh"]){
+        self.cal.string = [NSMutableString stringWithString:[self.cal cosh:[self.cal returnResult]]];
+        self.cal.screen = self.cal.string;
+        self.currentText_428.text = self.cal.screen;
+    }
+    if([title isEqualToString:@"tanh"]){
+        self.cal.string = [NSMutableString stringWithString:[self.cal tanh:[self.cal returnResult]]];
+        self.cal.screen = self.cal.string;
+        self.currentText_428.text = self.cal.screen;
+    }
     
 }
 

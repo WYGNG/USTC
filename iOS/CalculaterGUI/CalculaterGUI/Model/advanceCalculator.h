@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(NSString *)asin:(NSString *) content;
 -(NSString *)acos:(NSString *) content;
--(NSString *)stan:(NSString *) content;
+-(NSString *)atan:(NSString *) content;
 -(NSString *)ln:(NSString *) content;
 
 -(NSString *)sinh:(NSString *) content;

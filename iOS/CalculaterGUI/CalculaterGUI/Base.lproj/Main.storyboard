@@ -27,11 +27,11 @@
             </objects>
             <point key="canvasLocation" x="-2823" y="405"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--计算器-->
         <scene sceneID="Yfz-az-lJa">
             <objects>
-                <navigationController id="lyr-vX-2GA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="featured" id="Yw3-9O-IcA"/>
+                <navigationController title="计算器" id="lyr-vX-2GA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="计算器" image="calculator" id="Yw3-9O-IcA"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3ng-LX-S1c">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -45,7 +45,7 @@
             </objects>
             <point key="canvasLocation" x="-1802" y="-83"/>
         </scene>
-        <!--基本计算器-->
+        <!--基本-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -84,7 +84,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFQ-1y-vNk">
-                                        <rect key="frame" x="194" y="227" width="60" height="60"/>
+                                        <rect key="frame" x="194" y="224" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="11"/>
                                         <state key="normal" title="9" backgroundImage="9">
@@ -95,7 +95,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="-1" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sA2-z4-3zX">
-                                        <rect key="frame" x="107" y="142" width="60" height="60"/>
+                                        <rect key="frame" x="107" y="142" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <state key="normal" backgroundImage="back">
                                             <attributedString key="attributedTitle"/>
@@ -105,7 +105,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gv8-yk-QRq">
-                                        <rect key="frame" x="283" y="227" width="60" height="60"/>
+                                        <rect key="frame" x="283" y="224" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <state key="normal" title="*" backgroundImage="mul">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -115,7 +115,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vts-J7-bIh">
-                                        <rect key="frame" x="194" y="403" width="60" height="60"/>
+                                        <rect key="frame" x="194" y="385" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="11"/>
                                         <state key="normal" title="3" backgroundImage="3">
@@ -126,7 +126,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RmD-cY-WU9">
-                                        <rect key="frame" x="107" y="315" width="60" height="60"/>
+                                        <rect key="frame" x="107" y="304" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="11"/>
                                         <state key="normal" title="5" backgroundImage="5">
@@ -136,18 +136,8 @@
                                             <action selector="inputNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xs2-6P-Fhb"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEQ-Mx-nbW">
-                                        <rect key="frame" x="283" y="142" width="60" height="60"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <state key="normal" title="/" backgroundImage="div">
-                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="inputNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PTq-HV-0Dp"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGF-9l-SJn">
-                                        <rect key="frame" x="107" y="227" width="60" height="60"/>
+                                        <rect key="frame" x="107" y="224" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="11"/>
                                         <state key="normal" title="8" backgroundImage="8">
@@ -158,7 +148,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vg-ar-1dY">
-                                        <rect key="frame" x="107" y="403" width="60" height="60"/>
+                                        <rect key="frame" x="107" y="385" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="11"/>
                                         <state key="normal" title="2" backgroundImage="2">
@@ -169,7 +159,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUC-gE-5ZS">
-                                        <rect key="frame" x="19" y="315" width="60" height="60"/>
+                                        <rect key="frame" x="19" y="304" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="11"/>
                                         <state key="normal" title="4" backgroundImage="4">
@@ -180,7 +170,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="-1" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g3Y-yz-Sw8">
-                                        <rect key="frame" x="19" y="142" width="60" height="60"/>
+                                        <rect key="frame" x="19" y="142" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <state key="normal" backgroundImage="clear">
                                             <attributedString key="attributedTitle"/>
@@ -190,7 +180,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RvH-P7-A33">
-                                        <rect key="frame" x="19" y="227" width="60" height="60"/>
+                                        <rect key="frame" x="19" y="224" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                         <state key="normal" title="7" backgroundImage="7">
@@ -201,7 +191,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKf-HW-HYT">
-                                        <rect key="frame" x="283" y="315" width="60" height="60"/>
+                                        <rect key="frame" x="283" y="304" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <state key="normal" title="-" backgroundImage="sub">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -211,7 +201,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="-1" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fQ2-Dm-IiW">
-                                        <rect key="frame" x="194" y="142" width="60" height="60"/>
+                                        <rect key="frame" x="194" y="142" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <state key="normal" backgroundImage="reverse">
                                             <attributedString key="attributedTitle"/>
@@ -221,7 +211,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scx-AB-mx0">
-                                        <rect key="frame" x="194" y="491" width="60" height="60"/>
+                                        <rect key="frame" x="194" y="466" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="11"/>
                                         <state key="normal" title="." backgroundImage="dot">
@@ -232,7 +222,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7l-T9-Kuc">
-                                        <rect key="frame" x="194" y="315" width="60" height="60"/>
+                                        <rect key="frame" x="194" y="304" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="11"/>
                                         <state key="normal" title="6" backgroundImage="6">
@@ -243,7 +233,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJr-AP-EFS">
-                                        <rect key="frame" x="19" y="403" width="60" height="60"/>
+                                        <rect key="frame" x="19" y="385" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="11"/>
                                         <state key="normal" title="1" backgroundImage="1">
@@ -254,7 +244,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Evp-W9-m6z">
-                                        <rect key="frame" x="19" y="491" width="140" height="60"/>
+                                        <rect key="frame" x="22" y="466" width="165" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="11"/>
                                         <state key="normal" title="0" backgroundImage="0">
@@ -264,18 +254,8 @@
                                             <action selector="inputNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ewg-2I-deo"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmQ-Yn-Z8T">
-                                        <rect key="frame" x="283" y="491" width="60" height="60"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <state key="normal" title="" backgroundImage="equ">
-                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="result:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eSV-AP-UsF"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zaf-bQ-xQt">
-                                        <rect key="frame" x="283" y="403" width="60" height="60"/>
+                                        <rect key="frame" x="282" y="385" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <state key="normal" title="+" backgroundImage="add">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -284,15 +264,34 @@
                                             <action selector="inputNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uiG-UE-aeU"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEQ-Mx-nbW">
+                                        <rect key="frame" x="283" y="142" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <state key="normal" title="/" backgroundImage="div">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="inputNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PTq-HV-0Dp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmQ-Yn-Z8T">
+                                        <rect key="frame" x="283" y="466" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <state key="normal" title="" backgroundImage="equ">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="result:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eSV-AP-UsF"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="gE0-Mb-XJS"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="wsH-a3-zLw"/>
                     </view>
-                    <navigationItem key="navigationItem" title="基本计算器" id="3lz-45-Q3s">
+                    <navigationItem key="navigationItem" title="基本" id="3lz-45-Q3s">
                         <barButtonItem key="rightBarButtonItem" title="高级计算器" style="plain" id="COw-WR-CXl">
                             <connections>
                                 <segue destination="VHl-Sd-5Da" kind="push" identifier="advanceScene" id="LDR-2J-ENY"/>
@@ -474,7 +473,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="jlz-fv-9zm"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="xek-pV-3S8"/>
+                    <tabBarItem key="tabBarItem" title="健康" image="health" id="xek-pV-3S8"/>
                     <connections>
                         <outlet property="advise_428" destination="VJx-oB-Hgq" id="coB-EV-Rh6"/>
                         <outlet property="compute_428" destination="XZ8-Bl-RPf" id="RZz-Wc-KLq"/>
@@ -487,7 +486,7 @@
             </objects>
             <point key="canvasLocation" x="-1802" y="635"/>
         </scene>
-        <!--高级计算器-->
+        <!--高级-->
         <scene sceneID="OR6-QJ-xfp">
             <objects>
                 <viewController id="VHl-Sd-5Da" customClass="advanceCalculatorViewController" sceneMemberID="viewController">
@@ -519,15 +518,8 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PZJ-is-Zcw">
-                                        <rect key="frame" x="39" y="71" width="291" height="80"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JsN-YI-w4M">
-                                        <rect key="frame" x="12" y="149" width="60" height="60"/>
+                                        <rect key="frame" x="5" y="149" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="(" backgroundImage="(">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -537,7 +529,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOF-xV-6UY">
-                                        <rect key="frame" x="103" y="149" width="60" height="60"/>
+                                        <rect key="frame" x="96" y="149" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title=")" backgroundImage=")">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -547,7 +539,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3V-vV-KAt">
-                                        <rect key="frame" x="297" y="149" width="60" height="60"/>
+                                        <rect key="frame" x="284" y="149" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="pi" backgroundImage="pi">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -557,7 +549,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ClK-RB-ZKP">
-                                        <rect key="frame" x="12" y="237" width="60" height="60"/>
+                                        <rect key="frame" x="5" y="229" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="abs" backgroundImage="abs">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -567,7 +559,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5w-ra-C9q">
-                                        <rect key="frame" x="104" y="238" width="60" height="60"/>
+                                        <rect key="frame" x="96" y="229" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="sqrt" backgroundImage="sqrt">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -577,9 +569,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvT-XP-3Pr">
-                                        <rect key="frame" x="297" y="237" width="60" height="60"/>
+                                        <rect key="frame" x="284" y="229" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="x^2" backgroundImage="x^2">
+                                        <state key="normal" title="x_2" backgroundImage="x^2">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -587,7 +579,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCG-Nf-4ZL">
-                                        <rect key="frame" x="12" y="325" width="60" height="60"/>
+                                        <rect key="frame" x="8" y="309" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="sin" backgroundImage="sin">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -597,7 +589,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="St1-Bj-oDT">
-                                        <rect key="frame" x="103" y="325" width="60" height="60"/>
+                                        <rect key="frame" x="96" y="309" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="cos" backgroundImage="cos">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -607,9 +599,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxS-4W-CeJ">
-                                        <rect key="frame" x="297" y="325" width="60" height="60"/>
+                                        <rect key="frame" x="284" y="309" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="x^3" backgroundImage="x^3">
+                                        <state key="normal" title="x_3" backgroundImage="x^3">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -617,7 +609,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwm-jQ-MA4">
-                                        <rect key="frame" x="200" y="325" width="60" height="60"/>
+                                        <rect key="frame" x="187" y="309" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="tan" backgroundImage="tan">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -627,7 +619,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qh4-cv-8DP">
-                                        <rect key="frame" x="12" y="413" width="60" height="60"/>
+                                        <rect key="frame" x="8" y="390" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="asin" backgroundImage="asin">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -637,7 +629,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSS-ck-sVn">
-                                        <rect key="frame" x="103" y="413" width="60" height="60"/>
+                                        <rect key="frame" x="96" y="390" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="acos" backgroundImage="acos">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -647,7 +639,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62d-FJ-ilo">
-                                        <rect key="frame" x="297" y="413" width="60" height="60"/>
+                                        <rect key="frame" x="284" y="390" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="ln" backgroundImage="ln">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -657,7 +649,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNG-i7-ehz">
-                                        <rect key="frame" x="200" y="413" width="60" height="60"/>
+                                        <rect key="frame" x="187" y="390" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="atan" backgroundImage="atan">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -667,7 +659,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBf-6N-Iks">
-                                        <rect key="frame" x="12" y="501" width="60" height="60"/>
+                                        <rect key="frame" x="8" y="473" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="sinh" backgroundImage="sinh">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -677,7 +669,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrW-oJ-lEW">
-                                        <rect key="frame" x="104" y="501" width="60" height="60"/>
+                                        <rect key="frame" x="96" y="473" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="cosh" backgroundImage="cosh">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -687,7 +679,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSb-jM-rXL">
-                                        <rect key="frame" x="297" y="501" width="60" height="60"/>
+                                        <rect key="frame" x="284" y="473" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="log" backgroundImage="log">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -697,7 +689,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0s5-u1-Mmx">
-                                        <rect key="frame" x="200" y="501" width="60" height="60"/>
+                                        <rect key="frame" x="187" y="473" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="tanh" backgroundImage="tanh">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -707,9 +699,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7G-tA-52Y">
-                                        <rect key="frame" x="200" y="237" width="60" height="60"/>
+                                        <rect key="frame" x="187" y="229" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="1/x" backgroundImage="1x">
+                                        <state key="normal" title="x1" backgroundImage="1x">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -717,7 +709,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggS-sU-0I3">
-                                        <rect key="frame" x="200" y="149" width="60" height="60"/>
+                                        <rect key="frame" x="187" y="149" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="e" backgroundImage="e">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -726,12 +718,19 @@
                                             <action selector="inputKey:" destination="VHl-Sd-5Da" eventType="touchUpInside" id="1yL-Cy-eFN"/>
                                         </connections>
                                     </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PZJ-is-Zcw">
+                                        <rect key="frame" x="39" y="71" width="291" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="J4T-w3-ePm"/>
                     </view>
-                    <navigationItem key="navigationItem" title="高级计算器" id="U9w-Ih-qkZ"/>
+                    <navigationItem key="navigationItem" title="高级" id="U9w-Ih-qkZ"/>
                     <connections>
                         <outlet property="advancebg_428" destination="Sg3-cT-SaF" id="CU2-FA-fnm"/>
                         <outlet property="btn_e_428" destination="ggS-sU-0I3" id="B2Y-Df-Goy"/>
@@ -769,6 +768,7 @@
         <image name="atan" width="60" height="60"/>
         <image name="back" width="60" height="60"/>
         <image name="background-w" width="270" height="472"/>
+        <image name="calculator" width="36" height="36"/>
         <image name="clear" width="60" height="60"/>
         <image name="cos" width="60" height="60"/>
         <image name="cosh" width="60" height="60"/>
@@ -776,6 +776,7 @@
         <image name="dot" width="60" height="60"/>
         <image name="e" width="60" height="60"/>
         <image name="equ" width="60" height="60"/>
+        <image name="health" width="36" height="36"/>
         <image name="last" width="270" height="60"/>
         <image name="ln" width="60" height="60"/>
         <image name="log" width="60" height="60"/>
