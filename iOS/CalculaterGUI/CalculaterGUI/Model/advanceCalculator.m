@@ -38,7 +38,7 @@
 }
 - (NSString *)x_3:(NSString *)content{
     double d = [content doubleValue];
-    double res = log(d);
+    double res = pow(d,3);
     NSNumber * n = [[NSNumber alloc]initWithDouble: res];
     return [n stringValue];
 }
@@ -119,7 +119,7 @@
     long length = self.string.length - 1;
     if(length >= 0){
         [self.string deleteCharactersInRange:NSMakeRange(length,1)];
-        [self.screen deleteCharactersInRange:NSMakeRange(length, 1)];
+        //[self.screen deleteCharactersInRange:NSMakeRange(length, 1)];
     }
     
 }
