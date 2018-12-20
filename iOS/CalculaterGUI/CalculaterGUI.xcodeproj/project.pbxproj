@@ -19,6 +19,8 @@
 		157391F921BD744300A425B4 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 157391F821BD744300A425B4 /* Calculator.m */; };
 		15C8788421C671110079289A /* advanceCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C8788321C671110079289A /* advanceCalculator.m */; };
 		15C8788721C67B800079289A /* advanceCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C8788621C67B800079289A /* advanceCalculatorViewController.m */; };
+		15CF33B821CBA81200D88587 /* Calculator+Health.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CF33B721CBA81200D88587 /* Calculator+Health.m */; };
+		15CF33BE21CBAFF100D88587 /* HealthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CF33BD21CBAFF100D88587 /* HealthViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,10 @@
 		15C8788321C671110079289A /* advanceCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = advanceCalculator.m; sourceTree = "<group>"; };
 		15C8788521C67B800079289A /* advanceCalculatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = advanceCalculatorViewController.h; sourceTree = "<group>"; };
 		15C8788621C67B800079289A /* advanceCalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = advanceCalculatorViewController.m; sourceTree = "<group>"; };
+		15CF33B621CBA81200D88587 /* Calculator+Health.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Calculator+Health.h"; sourceTree = "<group>"; };
+		15CF33B721CBA81200D88587 /* Calculator+Health.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Calculator+Health.m"; sourceTree = "<group>"; };
+		15CF33BC21CBAFF100D88587 /* HealthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HealthViewController.h; sourceTree = "<group>"; };
+		15CF33BD21CBAFF100D88587 /* HealthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HealthViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,19 +118,21 @@
 		152B23EF21BD2A8300C54F97 /* CalculaterGUI */ = {
 			isa = PBXGroup;
 			children = (
-				157391EF21BD72CC00A425B4 /* Model */,
-				152B23F021BD2A8300C54F97 /* AppDelegate.h */,
-				152B23F121BD2A8300C54F97 /* AppDelegate.m */,
-				152B23F321BD2A8300C54F97 /* ViewController.h */,
-				152B23F421BD2A8300C54F97 /* ViewController.m */,
 				15C8788521C67B800079289A /* advanceCalculatorViewController.h */,
 				15C8788621C67B800079289A /* advanceCalculatorViewController.m */,
-				152B23F621BD2A8300C54F97 /* Main.storyboard */,
+				152B23F021BD2A8300C54F97 /* AppDelegate.h */,
+				152B23F121BD2A8300C54F97 /* AppDelegate.m */,
 				152B23FC21BD2A8500C54F97 /* Assets.xcassets */,
-				152B23FE21BD2A8500C54F97 /* LaunchScreen.storyboard */,
-				152B240121BD2A8500C54F97 /* Info.plist */,
-				152B240221BD2A8500C54F97 /* main.m */,
 				152B23F921BD2A8300C54F97 /* CalculaterGUI.xcdatamodeld */,
+				15CF33BC21CBAFF100D88587 /* HealthViewController.h */,
+				15CF33BD21CBAFF100D88587 /* HealthViewController.m */,
+				152B240121BD2A8500C54F97 /* Info.plist */,
+				152B23FE21BD2A8500C54F97 /* LaunchScreen.storyboard */,
+				152B240221BD2A8500C54F97 /* main.m */,
+				152B23F621BD2A8300C54F97 /* Main.storyboard */,
+				157391EF21BD72CC00A425B4 /* Model */,
+				152B23F321BD2A8300C54F97 /* ViewController.h */,
+				152B23F421BD2A8300C54F97 /* ViewController.m */,
 			);
 			path = CalculaterGUI;
 			sourceTree = "<group>";
@@ -150,10 +158,12 @@
 		157391EF21BD72CC00A425B4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				157391F721BD744300A425B4 /* Calculator.h */,
-				157391F821BD744300A425B4 /* Calculator.m */,
 				15C8788221C671110079289A /* advanceCalculator.h */,
 				15C8788321C671110079289A /* advanceCalculator.m */,
+				157391F721BD744300A425B4 /* Calculator.h */,
+				15CF33B621CBA81200D88587 /* Calculator+Health.h */,
+				15CF33B721CBA81200D88587 /* Calculator+Health.m */,
+				157391F821BD744300A425B4 /* Calculator.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -289,9 +299,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				15C8788721C67B800079289A /* advanceCalculatorViewController.m in Sources */,
+				15CF33B821CBA81200D88587 /* Calculator+Health.m in Sources */,
 				152B23F521BD2A8300C54F97 /* ViewController.m in Sources */,
 				152B23FB21BD2A8300C54F97 /* CalculaterGUI.xcdatamodeld in Sources */,
 				157391F921BD744300A425B4 /* Calculator.m in Sources */,
+				15CF33BE21CBAFF100D88587 /* HealthViewController.m in Sources */,
 				152B240321BD2A8500C54F97 /* main.m in Sources */,
 				15C8788421C671110079289A /* advanceCalculator.m in Sources */,
 				152B23F221BD2A8300C54F97 /* AppDelegate.m in Sources */,

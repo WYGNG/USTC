@@ -53,11 +53,12 @@
     
     UIToolbar * uitoolbar = [[UIToolbar alloc] init];
     uitoolbar.frame = self.backGround.bounds;
-    uitoolbar.barStyle = UIBarStyleBlack;
+    
+    uitoolbar.barStyle = UIBarStyleDefault;
     uitoolbar.alpha = 0.99;
     [self.backGround addSubview:uitoolbar];
     
-    self.TextField.text = self.advanceCalculator.screen;
+   self.TextField.text = self.advanceCalculator.screen;
     
 }
 
@@ -81,7 +82,7 @@
         if([a isEqual:@"+"] || [a isEqual:@"-"] || [a isEqual:@"*"] || [a isEqual:@"/"]){
             if([a isEqualToString:@"/"]){
                 BOOL flag = false;
-                for(int i = 0; i < self.advanceCalculator.string.length; i++){
+                for(int i = 0; i < self.advanceCalculator.screen.length; i++){
                     if([self.advanceCalculator.string characterAtIndex:i] == '.'){
                         flag = true;
                     }
@@ -157,7 +158,8 @@
     }
     self.TextField.text = nil;
     flag = YES;
-    
+    self.advanceCalculator.screen  = [NSMutableString stringWithString: @""];
+    [self.advanceCalculator.screen appendString:self.lastText.text];
     
     
 }
@@ -165,6 +167,7 @@
 /*删除*/
 - (IBAction)delete:(UIButton *)sender {
     [self.advanceCalculator deleteNumber];
+    
      self.TextField.text = self.advanceCalculator.string;
     //[self.advanceCalculator deleteNumber];
 }
@@ -197,5 +200,7 @@
         }
     }
 }
-
+- (void)viewDidDisappear:(BOOL)animated{
+    self.lastText.text = nil;
+}
 @end

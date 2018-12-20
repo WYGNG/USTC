@@ -19,7 +19,7 @@
     return [n stringValue];
 }
 
-- (void)delete{
+- (void)deleteNumber{
  
         long length = self.string.length - 1;
         if(length >= 0){

@@ -77,7 +77,8 @@
     
     UIToolbar * uitoolbar = [[UIToolbar alloc] init];
     uitoolbar.frame = self.advancebg_428.bounds;
-    uitoolbar.barStyle = UIBarStyleBlack;
+    
+    uitoolbar.barStyle = UIBarStyleDefault;
     uitoolbar.alpha = 0.99;
     [self.advancebg_428 addSubview:uitoolbar];
     _lastText_428.enabled= NO;
