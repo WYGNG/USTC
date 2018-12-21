@@ -37,8 +37,9 @@
             [self.cal.string appendString: [[sender titleLabel] text]];
         }
         [str appendString:[[sender titleLabel] text]];
-        self.currentText_428.text = str;
-        self.cal.screen = str;
+        
+        self.cal.screen = self.cal.string;
+        self.currentText_428.text = self.cal.screen;
     }
     NSString * title = sender.titleLabel.text;
     if([title isEqualToString:@"sqrt"]){
