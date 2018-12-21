@@ -22,6 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.cal = [[Calculator alloc]init];
+    self.advise_428.enabled = NO;
+    self.score_428.enabled = NO;
     // Do any additional setup after loading the view.
 }
 
