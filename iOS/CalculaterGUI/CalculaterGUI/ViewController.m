@@ -182,7 +182,7 @@
 - (IBAction)delete:(UIButton *)sender {
     [self.advanceCalculator deleteNumber];
     
-     self.TextField.text = self.advanceCalculator.screen;
+     self.TextField.text = self.advanceCalculator.string;
     //[self.advanceCalculator deleteNumber];
 }
 
