@@ -184,7 +184,13 @@
 }
 - (void) searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
     if(searchText.length == 0){
-        return;
+        //return修改一下
+        dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+        dispatch_async(queue, ^{
+            [self.students removeAllObjects];
+            [self loadData];
+            dispatch_async(dispatch_get_main_queue(), ^{[self.tableView reloadData];});
+        });
     }
     [self searchInName:searchText];
 }
