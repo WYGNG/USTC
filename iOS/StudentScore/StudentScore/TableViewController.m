@@ -30,7 +30,7 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated{
-    
+    [self.tableView reloadData];
 }
 
 - (void)viewDidLoad {
@@ -47,6 +47,7 @@
     for(NSData * s in dataarray){
         [self.students addObject:[NSKeyedUnarchiver unarchiveObjectWithData:s]];
     }
+    //[self.tableView reloadData];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
@@ -57,6 +58,17 @@
             vc.students = self.students;
             vc.indexPath = nil;
             vc.path = self.path;
+            
+        }
+    }
+    if([segue.identifier isEqualToString:@"showinfo"]){
+        if([segue.destinationViewController isKindOfClass:[ViewController class] ]){
+            NSIndexPath * indexPath = [self.tableView indexPathForCell:sender];
+            ViewController * vc = (ViewController *)segue.destinationViewController;
+            vc.students = self.students;
+            vc.indexPath = indexPath;
+            vc.path = self.path;
+            
             
         }
     }
@@ -77,6 +89,7 @@
     return [self.students count];
 }
 
+
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"studentcell" forIndexPath:indexPath];
@@ -86,7 +99,26 @@
     return cell;
 }
 
-
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    if(editingStyle == UITableViewCellEditingStyleDelete){
+        [self.students removeObjectAtIndex:indexPath.row];
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [self writeToFile:self.students filePath:self.path];
+    }
+    
+}
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
+    ViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"modifyview"];
+    vc.students = self.students;
+    vc.indexPath = indexPath;
+    vc.path = self.path;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+- (IBAction)refreshData:(id)sender {
+    [self.refreshControl beginRefreshing];
+    [self.tableView reloadData];
+    [self.refreshControl endRefreshing];
+}
 
 
 

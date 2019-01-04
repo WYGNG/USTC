@@ -35,7 +35,9 @@
     }
     else{
         self.students[self.indexPath.row] = student;
+        [tc writeToFile:self.students filePath:self.path];
     }
+    
     [self.navigationController popToRootViewControllerAnimated:YES];
     
     
@@ -57,6 +59,17 @@
 
 
 }
-
+- (void)viewWillAppear:(BOOL)animated{
+    if(self.indexPath!=nil){
+        Student * student = self.students[self.indexPath.row];
+        self.name_428.text = student.name;
+        self.number_428.text = student.number;
+        self.age_428.text = [NSString stringWithFormat:@"%ld",(long)student.age];
+        self.score_428.text = [NSString stringWithFormat:@"%.2f", student.score];
+        self.memo_428.text = student.memo;
+    }
+    
+    
+}
 
 @end
